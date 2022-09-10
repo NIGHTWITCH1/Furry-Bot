@@ -136,13 +136,6 @@ global.reloadHandler = function (restatConn) {
          ‷✧ Selamat Datang di Grup
            *@subject*
            
-╭◪ *Intro Member Baru* ◪─
-│ ✧ *Nama:*
-│ ✧ *Umur:*
-│ ✧ *Status:*
-│ ✧ *Askot:*
-╰◪
-  
               *◌  ⃝✧⪼ Deskripsi Group ミ*
   @desc`
   conn.bye = 'Selamat tinggal @user!'
