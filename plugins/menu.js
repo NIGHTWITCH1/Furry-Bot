@@ -172,7 +172,7 @@ ${'```%npmdesc```'}
  *Official Bot By @${'0'.split('@')[0]}* 
  *Powered By @${'16199961931'.split('@')[0]}*`
     let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
-     let pp = await conn.profilePictureUrl(who, 'image').catch((_) => "https://telegra.ph/file/24fa902ead26340f3df2c.png")
+     let pp = await conn.profilePictureUrl(who, 'image').catch((_) => "https://media.discordapp.net/attachments/849188337943969802/1018180867459391629/62_821-1366-5209_20220910_222701.jpg")
      let package = JSON.parse(await fs.promises.readFile(path.join(__dirname, '../package.json')).catch(_ => '{}')) 
      let { exp, limit, age, money, level, role, registered } = global.db.data.users[m.sender] 
      let { min, xp, max } = levelling.xpRange(level, global.multiplier) 
@@ -242,7 +242,7 @@ ${'```%npmdesc```'}
    "product": { 
    "productImage":{ 
    "mimetype": "image/jpeg", 
-   "jpegThumbnail": await (await fetch('https://telegra.ph/file/8f729fca4c6096d469664.jpg')).buffer(), //Gambarnye
+   "jpegThumbnail": await (await fetch('https://media.discordapp.net/attachments/849188337943969802/1018180867459391629/62_821-1366-5209_20220910_222701.jpg')).buffer(), //Gambarnye
      }, 
    "title": `${ucapan()}`, 
    "description": '𝗧 𝗜 𝗠 𝗘 : ' + wktuwib, 
@@ -267,7 +267,7 @@ ${'```%npmdesc```'}
     surface : 1,
     message: '[❗] Memuat Menu ' + teks + '...',
     orderTitle: `▮Menu ▸`,
-    thumbnail: await (await fetch('https://telegra.ph/file/e6c498c568fd8d35f9395.jpg')).buffer(), //Gambarnye
+    thumbnail: await (await fetch('https://media.discordapp.net/attachments/849188337943969802/1018180867459391629/62_821-1366-5209_20220910_222701.jpg')).buffer(), //Gambarnye
     sellerJid: '0@s.whatsapp.net' 
     }
     }
@@ -284,7 +284,7 @@ ${'```%npmdesc```'}
     surface : 1,
     message: `CUTE IQ-MD By Ziv San`, 
     orderTitle: `▮Menu ▸`,
-    thumbnail: await (await fetch('https://telegra.ph/file/db5b4aed0d6d2e6c10c8f.jpg')).buffer(), //Gambarnye
+    thumbnail: await (await fetch('https://media.discordapp.net/attachments/849188337943969802/1018180867459391629/62_821-1366-5209_20220910_222701.jpg')).buffer(), //Gambarnye
     sellerJid: '0@s.whatsapp.net' 
     }
     }
@@ -317,10 +317,10 @@ ${'```%npmdesc```'}
        } 
      }) 
      if (teks == '404') {
- 	let cute = `${pickRandom(['https://telegra.ph/file/dc8b3a29b4b2c770d1727.jpg', 'https://telegra.ph/file/dc8b3a29b4b2c770d1727.jpg', 'https://telegra.ph/file/1767c5d6b71e200231ca6.jpg', 'https://telegra.ph/file/13488976473884608c03c.jpg','https://telegra.ph/file/21329b42e497787e3c2c2.jpg','https://telegra.ph/file/6999d6a56326852484746.jpg', 'https://telegra.ph/file/5df66151d217bb5cd1627.jpg', 'https://telegra.ph/file/c71a6b41795ab649daef7.jpg', 'https://telegra.ph/file/c9a695262426ed4e8b3b8.jpg'])}` 
+ 	let cute = `${pickRandom(['https://media.discordapp.net/attachments/849188337943969802/1018180867459391629/62_821-1366-5209_20220910_222701.jpg', 'https://media.discordapp.net/attachments/849188337943969802/1018180867459391629/62_821-1366-5209_20220910_222701.jpg'])}` 
  	let ori = `Hi Kak, @${m.sender.split`@`[0]}
  
-Saya Adalah Cute Bot Salah Satu Bot Whatsapp Yang Siap Membantu Kamu Mempermudah Sesuatu Seperti Membuat Sticker Dan Lainnya, Kalo Kamu Mau Request Fitur Silahkan Ketik #request Pesan Atau Fitur Yang Kamu Inginkan!`
+Saya Adalah iRexus Bot Salah Satu Bot Whatsapp Yang Siap Membantu Kamu Mempermudah Sesuatu Seperti Membuat Sticker Dan Lainnya, Kalo Kamu Mau Request Fitur Silahkan Ketik #request Pesan Atau Fitur Yang Kamu Inginkan!`
 conn.sendMessage(m.chat, {
     	react: {
     		text: emot,
@@ -449,16 +449,16 @@ ptt: true, contextInfo:{ externalAdReply: { title: `💌 Ultah Fory : ${ohari} 
    const lgs = moment.tz('Asia/Jakarta').format('HH') 
    res = "Selamat dinihari" 
    if (lgs >= 4) { 
-     imp = 'https://telegra.ph/file/abff7903bd674a8f9d307.jpg' 
+     imp = 'https://media.discordapp.net/attachments/849188337943969802/1018180867459391629/62_821-1366-5209_20220910_222701.jpg' 
    } 
    if (lgs > 10) { 
-     imp = 'https://telegra.ph/file/ba940019735e224132f74.jpg' 
+     imp = 'https://media.discordapp.net/attachments/849188337943969802/1018180867459391629/62_821-1366-5209_20220910_222701.jpg' 
    } 
    if (lgs >= 15) { 
-     imp = 'https://telegra.ph/file/a332bbac803e3c631bb07.jpg' 
+     imp = 'https://media.discordapp.net/attachments/849188337943969802/1018180867459391629/62_821-1366-5209_20220910_222701.jpg' 
    } 
    if (lgs >= 18) { 
-     imp = 'https://telegra.ph/file/a5c91ab6c58c7be066654.jpg' 
+     imp = 'https://media.discordapp.net/attachments/849188337943969802/1018180867459391629/62_821-1366-5209_20220910_222701.jpg' 
    } 
    return imp 
  } 
@@ -466,16 +466,16 @@ ptt: true, contextInfo:{ externalAdReply: { title: `💌 Ultah Fory : ${ohari} 
    const varel = moment.tz('Asia/Jakarta').format('HH') 
    res = "Selamat dinihari" 
    if (varel >= 4) { 
-     dimrel = 'https://telegra.ph/file/8ed7c08f3c53efb3250e8.jpg' 
+     dimrel = 'https://media.discordapp.net/attachments/849188337943969802/1018180867459391629/62_821-1366-5209_20220910_222701.jpg' 
    } 
    if (varel > 10) { 
-     dimrel = 'https://telegra.ph/file/6e44f7a0ca634419fd6fe.jpg' 
+     dimrel = 'https://media.discordapp.net/attachments/849188337943969802/1018180867459391629/62_821-1366-5209_20220910_222701.jpg' 
    } 
    if (varel >= 15) { 
-     dimrel = 'https://telegra.ph/file/5d0efe9615a43d069d9fb.jpg' 
+     dimrel = 'https://media.discordapp.net/attachments/849188337943969802/1018180867459391629/62_821-1366-5209_20220910_222701.jpg' 
    } 
    if (varel >= 18) { 
-     dimrel = 'https://telegra.ph/file/b823c87f29294bf3bb9eb.jpg' 
+     dimrel = 'https://media.discordapp.net/attachments/849188337943969802/1018180867459391629/62_821-1366-5209_20220910_222701.jpg' 
    } 
    return dimrel 
  } 
@@ -501,7 +501,7 @@ ptt: true, contextInfo:{ externalAdReply: { title: `💌 Ultah Fory : ${ohari} 
    let font = await jimp.loadFont('./name.fnt'), 
      mask = await jimp.read('https://i.imgur.com/552kzaW.png'), 
      welcome = await jimp.read(thumbnailUrl.getRandom()), 
-     avatar = await jimp.read(await conn.profilePictureUrl(m.sender, 'image').catch(() => 'https://telegra.ph/file/24fa902ead26340f3df2c.png')), 
+     avatar = await jimp.read(await conn.profilePictureUrl(m.sender, 'image').catch(() => 'https://media.discordapp.net/attachments/849188337943969802/1018180867459391629/62_821-1366-5209_20220910_222701.jpg')), 
      status = (await conn.fetchStatus(m.sender).catch(console.log) || {}).status?.slice(0, 30) || 'Not Detected' 
   
      await avatar.resize(460, 460) 
