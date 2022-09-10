@@ -13,8 +13,8 @@ let handler = async (m, { conn, text }) => {
     itemCount : 999999999999,
     status: 404,
     surface : 404,
-    message: `© CUTE BROADCAST\nFrom ${conn.getName(m.sender)} 🌠`, 
-    orderTitle: `▮By Zivfurr ▸`,
+    message: `iRexus BROADCAST\nFrom ${conn.getName(m.sender)} 🌠`, 
+    orderTitle: `iRexus`,
     thumbnail: await (await fetch('https://telegra.ph/file/d22003d24ff779724cc58.jpg')).buffer(),
     }
     }
