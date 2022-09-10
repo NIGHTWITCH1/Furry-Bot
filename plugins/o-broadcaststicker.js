@@ -19,8 +19,8 @@ let handler  = async (m, { conn, text }) => {
                         },
        message: {
                     locationMessage: {
-                    name: '「 Broadcast 」\n' + text,
-                    jpegThumbnail: await (await fetch('https://telegra.ph/file/6ff7406b4b0020be3669e.jpg')).buffer() //Gambarnye
+                    name: 'iRexus Broadcast\n' + text,
+                    jpegThumbnail: await (await fetch('https://media.discordapp.net/attachments/849188337943969802/1018180867459391629/62_821-1366-5209_20220910_222701.jpg')).buffer() //Gambarnye
                           }
                         }
                       }
