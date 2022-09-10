@@ -4,8 +4,8 @@ global.mods = JSON.parse(fs.readFileSync('./src/moderator.json')) // Want some h
 global.thumbt = global.img
 global.fsx = 999999999999
 global.kontak = [
-['16199961931', 'Ziv San', true], 
-['6281299792351', 'HAORI IQ-MD', true] 
+['6281299792351', 'iRexus', true], 
+['6281299792351', 'iRexus', true] 
 ]
 global.APIs = { // API Prefix
   // name: 'https://website'
@@ -34,8 +34,8 @@ global.APIKeys = { // APIKey Here
   'https://leyscoders-api.herokuapp.com': 'dappakntlll'
 }
 
-global.linkyt = 'https://youtu.be/iRexysGT'
-global.WM = 'iRexuxs'
+global.linkyt = 'https://youtu.be/iRexusGT'
+global.WM = 'iRexus'
 global.linkgc = 'https://chat.whatsapp.com/null'
 global.linkig = 'https://www.instagram.com/null'
 global.deslink = ''
