@@ -24,28 +24,28 @@ let fetch = require('node-fetch')
  `.trim() 
          await conn.reply(m.chat, caption, m, { contextInfo: { 
              externalAdReply: { 
-               sourceUrl: 'https://youtu.be/-tKVN2mAKRI', 
+               sourceUrl: 'https://youtu.be/null', 
                title: 'Official group', 
-               body: 'Haruno Bot', 
+               body: 'iRexus Bot', 
                thumbnail: pp 
              } 
          }}) 
      } catch (e) { 
          let tulisan = ` 
- *Join Juga Group Official Cute Bot!* 
+ *Join Juga Group Official iRexus* 
 Sekedar meramaikan, atau juga jika ada informasi mengenai bot. 
   
  *Group 1* 
-https://chat.whatsapp.com/Kyz397uqvJZ5AvX7I4BSID
+https://chat.whatsapp.com/null
  
  `.trim() 
      await conn.sendButtonDoc(m.chat, tulisan.trim(), 'Harap patuhi rules dan peraturan pada masing masing group ya! Terimakasih.', 'Rules', '.rules', m, {
     quoted: m,
     contextInfo: { forwardingScore: 99999, isForwarded: true,
         externalAdReply: {
-        	sourceUrl: 'https://vt.tiktok.com/ZSRRmS8vh/',
-            title: 'Gruop Official',
-            body: '© Cute IQ-MD By Ziv San',
+        	sourceUrl: 'https://vt.tiktok.com/null',
+            title: 'Group Official',
+            body: 'iRexus',
           thumbnail: await (await fetch('https://telegra.ph/file/f05029f17de62fb420459.jpg')).buffer()
         }
      }
