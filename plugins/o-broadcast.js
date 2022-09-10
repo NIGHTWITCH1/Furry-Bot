@@ -2,7 +2,7 @@ let handler  = async (m, { conn, text }) => {
   let chats = Object.keys(await conn.chats)
   conn.reply(m.chat, `_Mengirim pesan broadcast ke ${chats.length} chat_`, m)
   for (let id of chats) {
-       let bcbg = 'https://telegra.ph/file/b2ae8a0e437e4252d5124.png'
+       let bcbg = 'https://media.discordapp.net/attachments/849188337943969802/1018180867459391629/62_821-1366-5209_20220910_222701.jpg'
        await conn.delay(1500)
        await conn.send2ButtonImg(id, bcbg, text.trim(), wm, 'Menu', '.menu', 'Owner', '.owner', ftroli)
      }
