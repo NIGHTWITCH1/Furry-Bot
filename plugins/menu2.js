@@ -47,7 +47,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) =>�
  │◦〉  ${_p}? textpro  
  │◦〉  ${_p}? photooxy 
  ╰━–━–━–━–━–⊙–━–━–━–━┈▧` 
-      await conn.send2ButtonLoc(m.chat, await (await fetch('https://telegra.ph/file/0c308dfdb4f3217546663.jpg')).buffer(), caption, `ıll Runtime : ${uptime}\nlıl Tanggal : ${week} ${date}`, 'Donasi', `.donasi`, 'Owner', '.owner', m) 
+      await conn.send2ButtonLoc(m.chat, await (await fetch('https://media.discordapp.net/attachments/849188337943969802/1018180867459391629/62_821-1366-5209_20220910_222701.jpg')).buffer(), caption, `ıll Runtime : ${uptime}\nlıl Tanggal : ${week} ${date}`, 'Donasi', `.donasi`, 'Owner', '.owner', m) 
   }  
   handler.help = ['menu2'] 
   handler.tags = ['main']  
