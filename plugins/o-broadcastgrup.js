@@ -1,19 +1,21 @@
-let handler  = async (m, { conn, text }) => {
-  let groups = conn.chats.all().filter(v => v.jid.endsWith('g.us') && !v.read_only && v.message).map(v => v.jid)
-  let content = (/bcgc|broadcastgroup|bcgrup|bcgrup|broadcastgc/i.test(text) ? text : text + '\n' + readMore + '「 ' + conn.getName(conn.user.jid) + ' Broadcast 」')
-  for (let id of groups) conn.sendMessage(id, content, m.mtype, m.msg.contextInfo ? {
-    contextInfo: m.msg.contextInfo
-  } : {})
-  conn.reply(m.chat, `_Mengirim pesan broadcast ke ${groups.length} grup_`, m)
+let handler = async (m, { conn,isOwner, isROwner, text }) => {
+    const delay = time => new Promise(res => setTimeout(res, time))
+    let getGroups = await conn.groupFetchAllParticipating()
+    let groups = Object.entries(getGroups).slice(0).map(entry => entry[1])
+    let anu = groups.map(v => v.id)
+    let pesan = m.quoted && m.quoted.text ? m.quoted.text : text
+    if(!pesan) throw 'teksnya?'
+    m.reply(`Mengirim Broadcast Ke ${anu.length} Chat, Waktu Selesai ${anu.length * 0.5} detik`)
+    for (let i of anu) {
+    await delay(500)
+    conn.send3TemplateButtonImg(i, 'global.img', pesan, wm, m)
+    }
+  m.reply(`Sukses Mengirim Broadcast Ke ${anu.length} Group`)
 }
-handler.help = ['broadcastgroup','bcgc'].map(v => v + ' <teks>')
+handler.help = ['bcgc <teks>']
 handler.tags = ['owner']
 handler.command = /^(broadcastgc|bcgc)$/i
+
 handler.owner = true
 
-handler.fail = null
-
 module.exports = handler
-
-const more = String.fromCharCode(8206)
-const readMore = more.repeat(4001)
