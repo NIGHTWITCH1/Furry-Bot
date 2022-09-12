@@ -1,12 +1,10 @@
 let handler  = async (m, { conn, text }) => {
-  let chats = Object.keys(await conn.chats)
+  let chats = conn.chats.all().filter(v => !v.read_only && v.message && !v.archive).map(v => v.jid)
+  let cc = conn.serializeM(text ? m : m.quoted ? await m.getQuotedObj() : false || m)
+  let teks = text ? text : cc.text
   conn.reply(m.chat, `_Mengirim pesan broadcast ke ${chats.length} chat_`, m)
-  for (let id of chats) {
-       let bcbg = 'https://media.discordapp.net/attachments/849188337943969802/1018180867459391629/62_821-1366-5209_20220910_222701.jpg'
-       await conn.delay(1500)
-       await conn.send2ButtonImg(id, bcbg, text.trim(), wm, 'Menu', '.menu', 'Owner', '.owner', ftroli)
-     }
-  m.reply('*Broadcast selesai*')
+  for (let id of chats) await conn.copyNForward(id, conn.cMod(m.chat, cc, /bc|broadcast/i.test(teks) ? teks : teks + '\n' + '*iRexus Broadcast* ' + (2022)), true).catch(_=>_)
+  m.reply('Selesai Broadcast All Chat :)')
 }
 handler.help = ['broadcast','bc'].map(v => v + ' <teks>')
 handler.tags = ['owner']
@@ -23,3 +21,8 @@ handler.botAdmin = false
 handler.fail = null
 
 module.exports = handler
+
+const more = String.fromCharCode(8206)
+const readMore = more.repeat(4001)
+
+const randomID = length => require('crypto').randomBytes(Math.ceil(length * .5)).toString('hex').slice(0, length)
