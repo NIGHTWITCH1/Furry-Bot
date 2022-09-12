@@ -8,7 +8,7 @@ let handler = async (m, { conn,isOwner, isROwner, text }) => {
     m.reply(`Mengirim Broadcast Ke ${anu.length} Chat, Waktu Selesai ${anu.length * 0.5} detik`)
     for (let i of anu) {
     await delay(500)
-    conn.send3TemplateButtonImg(i, 'https://telegra.ph/file/b2ae8a0e437e4252d5124.png', pesan, wm, 'Owner', '.owner', m)
+    conn.send3TemplateButtonImg(i, 'https://telegra.ph/file/b2ae8a0e437e4252d5124.png', pesan, wm, 'Owner', '.owner', 'Owner', '.owner', m)
     }
   m.reply(`Sukses Mengirim Broadcast Ke ${anu.length} Group`)
 }
