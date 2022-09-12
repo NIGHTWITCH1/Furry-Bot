@@ -9,7 +9,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 🧏 *Nickname:* ${nickname}${description ? `🖹 *Description:* ${description}` : ''}
 `.trim(), m)
 }
-handler.help = ['tiktok'].map(v => v + ' <url>')
+handler.help = ['tiktoknowm'].map(v => v + ' <url>')
 handler.tags = ['downloader']
 
 handler.command = /^(tik(tok)?(dl)?)$/i
