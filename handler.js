@@ -332,7 +332,7 @@ module.exports = {
                     if (!'self' in settings) settings.self = false
                     if (!'anon' in settings) settings.anon = true
                     if (!'anticall' in settings) settings.anticall = true
-                    if (!'backup' in settings) settings.backup = false
+                    if (!'backup' in settings) settings.backup = true
                     if (!isNumber(settings.backupDB)) settings.backupDB = 0
                     if (!'groupOnly' in settings) settings.groupOnly = false
                     if (!'jadibot' in settings) settings.jadibot = false
@@ -344,7 +344,7 @@ module.exports = {
                     self: false,
                     anon: true,
                     anticall: true,
-                    backup: false,
+                    backup: true,
                     backupDB: 0,
                     groupOnly: false,
                     jadibot: false,
